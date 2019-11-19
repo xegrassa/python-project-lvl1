@@ -2,8 +2,8 @@ language: python
 python:
   - 3.6.8
 install:
-  - pip install --user  poetry
+  - pip install poetry
 script:
-  - python -m pip install flake8
+  #- python -m pip install flake8
   - make lint
 	
