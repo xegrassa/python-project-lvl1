@@ -11,7 +11,7 @@ install_requires = \
 ['prompt>=0.4.1,<0.5.0']
 
 entry_points = \
-{'console_scripts': ['brain-even = brain_games.scripts.brain-even:main',
+{'console_scripts': ['brain-even = brain_games.scripts.brain_even:main',
                      'brain-games = brain_games.scripts.brain_games:main']}
 
 setup_kwargs = {

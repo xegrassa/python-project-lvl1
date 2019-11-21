@@ -1,6 +1,6 @@
 Metadata-Version: 1.2
 Name: xegrassa-brain-games
-Version: 0.1.0
+Version: 1.0.2
 Summary: UNKNOWN
 Home-page: UNKNOWN
 Author: Your Name
@@ -8,4 +8,4 @@ Author-email: you@example.com
 License: UNKNOWN
 Description: UNKNOWN
 Platform: UNKNOWN
-Requires-Python: >=2.7,<3.0
+Requires-Python: >=3.6.8,<4.0.0
