@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xegrassa_brain_games"
-version = "1.0.5"
+version = "1.0.7"
 description = "add part EVEN"
 authors = ["Your Name <you@example.com>"]
 packages = [
