@@ -1,16 +1,15 @@
 from brain_games import cli
-import random
 
 
-def main():
-    print('Welcome to the Brain Games!\nAnswer \
-"yes" if number even otherwise answer "no"\n')
+def main(welcome, gen_question, gen_answer):
+    cli.welcome()
+    print(welcome, end="\n\n")
     name = cli.run()
     count_correct_answer = 0
     while count_correct_answer != 3:
-        rnd_number = random.randint(1, 20)
-        correct_answer = 'yes' if rnd_number % 2 == 0 else 'no'
-        print("Question: " + str(rnd_number))
+        question = gen_question()
+        correct_answer = gen_answer(question)
+        print("Question: " + question)
         print("Your answer: ", end='')
         answer = input()
         if answer == correct_answer:
@@ -22,7 +21,3 @@ et's try again, {}!".format(answer, correct_answer, name))
             break
     if count_correct_answer == 3:
         print("Congratulations, {}!".format(name))
-
-
-if __name__ == '__main__':
-    main()
