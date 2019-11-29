@@ -13,8 +13,8 @@ def gen_question():
 
 
 def gen_answer(question):
-    a,b = question.split()
-    a,b = int(a), int(b)
+    a, b = question.split()
+    a, b = int(a), int(b)
     correct_answer = str(math.gcd(a, b))
     return correct_answer
 
