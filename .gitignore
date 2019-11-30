@@ -1,6 +1,6 @@
 .venv
 .python-version
-.cast
+*.cast
 dist
 5-step.cast
 xegrassa_brain_games.egg-info/
