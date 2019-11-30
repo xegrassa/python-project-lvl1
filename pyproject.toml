@@ -1,8 +1,14 @@
 [tool.poetry]
 name = "xegrassa_brain_games"
 version = "1.2.0"
-description = "add part PRIME"
-authors = ["Your Name <you@example.com>"]
+description = "5-simple game for project in Hexlet"
+authors = ["Egrassa <bacek90@mail.ru>"]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Natural Language :: Russian",
+	"Programming Language :: Python :: 3.6"
+]
+repository = https://github.com/xegrassa/python-project-lvl1
 packages = [
     { include = "brain_games" },
   ]
