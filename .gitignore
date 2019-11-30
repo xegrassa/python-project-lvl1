@@ -1,7 +1,8 @@
 .venv
 .python-version
 *.cast
+*.pyc
 dist
 5-step.cast
 xegrassa_brain_games.egg-info/
-brain_games/games/__pycache__
+__pycache__/
