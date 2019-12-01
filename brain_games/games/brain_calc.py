@@ -3,8 +3,8 @@ import random
 
 
 def main():
-    welcome = "What is the result of the expression?"
-    brain_logic.main(welcome, gen_question, gen_answer)
+    WELCOME = "What is the result of the expression?"
+    brain_logic.main(WELCOME, gen_question, gen_answer)
 
 
 def gen_question():

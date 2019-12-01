@@ -4,8 +4,8 @@ import math
 
 
 def main():
-    welcome = "Find the greatest common divisor of given numbers."
-    brain_logic.main(welcome, gen_question, gen_answer)
+    WELCOME = "Find the greatest common divisor of given numbers."
+    brain_logic.main(WELCOME, gen_question, gen_answer)
 
 
 def gen_question():

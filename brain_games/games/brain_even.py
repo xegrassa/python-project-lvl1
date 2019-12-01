@@ -3,8 +3,8 @@ import random
 
 
 def main():
-    welcome = 'Answer "yes" if number even otherwise answer "no"'
-    brain_logic.main(welcome, gen_question, gen_answer)
+    WELCOME = 'Answer "yes" if number even otherwise answer "no"'
+    brain_logic.main(WELCOME, gen_question, gen_answer)
 
 
 def gen_question():

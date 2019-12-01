@@ -3,8 +3,8 @@ import random
 
 
 def main():
-    welcome = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    brain_logic.main(welcome, gen_question, gen_answer)
+    WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    brain_logic.main(WELCOME, gen_question, gen_answer)
 
 
 def gen_question():

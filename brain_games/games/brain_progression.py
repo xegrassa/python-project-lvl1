@@ -3,21 +3,21 @@ import random
 
 
 def main():
-    welcome = 'What number is missing in the progression?'
-    brain_logic.main(welcome, gen_question, gen_answer)
+    WELCOME = 'What number is missing in the progression?'
+    brain_logic.main(WELCOME, gen_question, gen_answer)
 
 
 def gen_question():
-    count_number = 10
+    LENGHT_PROGRESSION = 10
     step_progression = random.randint(1, 10)
     start_progression = random.randint(1, 20)
-    end_progression = start_progression + (count_number * step_progression)
-    progression = []
+    end_progression = start_progression + (LENGHT_PROGRESSION * step_progression)
+    progressions = []
     for i in range(start_progression, end_progression, step_progression):
-        progression.append(str(i))
-    puzzle_number = random.choice(progression)
+        progressions.append(str(i))
+    puzzle_number = random.choice(progressions)
     question = []
-    for i in progression:
+    for i in progressions:
         if i == puzzle_number:
             question.append('..')
         else:
@@ -26,17 +26,17 @@ def gen_question():
 
 
 def gen_answer(question):
-    progression = question.split()
-    index_puzzle_number = progression.index('..')
+    progressions = question.split()
+    index_puzzle_number = progressions.index('..')
     if index_puzzle_number > 1:
-        step_progression = int(progression[1]) - int(progression[0])
-        puzzle_number = int(progression[0]) + \
+        step_progression = int(progressions[1]) - int(progressions[0])
+        puzzle_number = int(progressions[0]) + \
             (step_progression * index_puzzle_number)
         return str(puzzle_number)
     else:
-        step_progression = int(progression[-1]) - int(progression[-2])
-        puzzle_number = int(progression[-1]) - \
-            (step_progression * (len(progression) - index_puzzle_number - 1))
+        step_progression = int(progressions[-1]) - int(progressions[-2])
+        puzzle_number = int(progressions[-1]) - \
+            (step_progression * (len(progressions) - index_puzzle_number - 1))
         return str(puzzle_number)
 
 

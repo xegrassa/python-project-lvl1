@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xegrassa_brain_games"
-version = "1.2.0"
+version = "1.2.2"
 description = "5-simple game for project in Hexlet"
 authors = ["Egrassa <bacek90@mail.ru>"]
 classifiers = [
