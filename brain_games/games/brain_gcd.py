@@ -3,20 +3,18 @@ import random
 import math
 
 
+WELCOME = "Find the greatest common divisor of given numbers."
+
+
 def main():
-    WELCOME = "Find the greatest common divisor of given numbers."
-    brain_logic.main(WELCOME, gen_question, gen_answer)
+    pass
 
 
-def gen_question():
-    return "{} {}".format(random.randint(1, 30), random.randint(10, 40))
-
-
-def gen_answer(question):
-    a, b = question.split()
-    a, b = int(a), int(b)
-    correct_answer = str(math.gcd(a, b))
-    return correct_answer
+def creating_quiestion_and_answer():
+    numerator = random.randint(1, 30)
+    denominator = random.randint(10, 40)
+    answer = str(math.gcd(numerator, denominator))
+    return "{} {}".format(numerator, denominator), answer
 
 
 if __name__ == '__main__':

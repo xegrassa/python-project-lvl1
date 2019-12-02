@@ -2,27 +2,22 @@ from brain_games.scripts import brain_logic
 import random
 
 
+WELCOME = "What is the result of the expression?"
+
 def main():
-    WELCOME = "What is the result of the expression?"
-    brain_logic.main(WELCOME, gen_question, gen_answer)
+    pass
 
-
-def gen_question():
+def creating_quiestion_and_answer():
     operation = random.choice(['+', '-', '*'])
     number_1 = random.randint(1, 10)
     number_2 = random.randint(1, 10)
-    return "{} {} {}".format(str(number_1), operation, str(number_2))
-
-
-def gen_answer(question):
-    number_1, operation, number_2 = question.split()
-    number_1, number_2 = int(number_1), int(number_2)
     if operation == '+':
-        return str(number_1 + number_2)
+        answer = str(number_1 + number_2)
     elif operation == '-':
-        return str(number_1 - number_2)
+        answer = str(number_1 - number_2)
     else:
-        return str(number_1 * number_2)
+        answer = str(number_1 * number_2)
+    return "{} {} {}".format(str(number_1), operation, str(number_2)), answer
 
 
 if __name__ == '__main__':

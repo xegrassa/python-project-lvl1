@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xegrassa_brain_games"
-version = "1.2.2"
+version = "1.3"
 description = "5-simple game for project in Hexlet"
 authors = ["Egrassa <bacek90@mail.ru>"]
 classifiers = [
@@ -22,12 +22,12 @@ flake8 = "^3.7"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.games.brain_even:main"
-brain-calc = "brain_games.games.brain_calc:main"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 brain-logic = "brain_games.scripts.brain_logic:main"
-brain-gcd = "brain_games.games.brain_gcd:main"
-brain-progression = "brain_games.games.brain_progression:main"
-brain-prime = "brain_games.games.brain_prime:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
 
 [build-system]
 requires = ["poetry>=0.12"]
