@@ -1,5 +1,5 @@
 from brain_games.scripts.brain_logic import start_game
-from brain_games.games import brain_prime 
+from brain_games.games import brain_prime
 
 
 def main():

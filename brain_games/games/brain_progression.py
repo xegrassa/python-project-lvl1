@@ -1,4 +1,3 @@
-from brain_games.scripts import brain_logic
 import random
 
 
@@ -6,14 +5,15 @@ WELCOME = 'What number is missing in the progression?'
 
 
 def main():
-    pass    
+    pass
 
 
 def creating_quiestion_and_answer():
     LENGHT_PROGRESSION = 10
     step_progression = random.randint(1, 10)
     start_progression = random.randint(1, 20)
-    end_progression = start_progression + (LENGHT_PROGRESSION * step_progression)
+    end_progression = start_progression + \
+        (LENGHT_PROGRESSION * step_progression)
     questions = []
     for i in range(start_progression, end_progression, step_progression):
         questions.append(str(i))

@@ -1,11 +1,12 @@
-from brain_games.scripts import brain_logic
 import random
 
 
 WELCOME = "What is the result of the expression?"
 
+
 def main():
     pass
+
 
 def creating_quiestion_and_answer():
     operation = random.choice(['+', '-', '*'])
