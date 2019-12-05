@@ -1,13 +1,13 @@
 from brain_games import cli
 
 
-def start_game(welcome, question_and_answer):
+def start_game(game):
     cli.welcome()
-    print(welcome, end="\n\n")
-    name = cli.run()
+    print(game.RULE, end="\n\n")
+    name = cli.take_name()
     ROUND = 3
     for i in range(ROUND):
-        question, correct_answer = question_and_answer()
+        question, correct_answer = game.creating_quiestion_and_answer()
         print("Question: " + question)
         print("Your answer: ", end='')
         answer = input()

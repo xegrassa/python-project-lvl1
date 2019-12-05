@@ -1,21 +1,21 @@
 import random
+import math
 
 
-WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def main():
-    pass
+def is_prime(number):
+    for i in range(2, int(math.sqrt(number)) + 1):
+        if number % i == 0:
+            return False
+    else:
+        return True
 
 
 def creating_quiestion_and_answer():
     number = random.randint(1, 30)
-    for i in range(2, number + 1):
-        if number % i == 0 and i != number:
-            return str(number), "no"
-        elif i == number:
-            return str(number), "yes"
-
-
-if __name__ == '__main__':
-    main()
+    if is_prime(number):
+        return str(number), "yes"
+    else:
+        return str(number), "no"

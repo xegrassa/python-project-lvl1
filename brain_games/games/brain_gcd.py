@@ -1,20 +1,17 @@
 import random
-import math
 
 
-WELCOME = "Find the greatest common divisor of given numbers."
+RULE = "Find the greatest common divisor of given numbers."
 
 
-def main():
-    pass
+def gcd(a, b):
+    if(b == 0):
+        return a
+    return gcd(b, a % b)
 
 
 def creating_quiestion_and_answer():
     numerator = random.randint(1, 30)
     denominator = random.randint(10, 40)
-    answer = str(math.gcd(numerator, denominator))
+    answer = str(gcd(numerator, denominator))
     return "{} {}".format(numerator, denominator), answer
-
-
-if __name__ == '__main__':
-    main()
