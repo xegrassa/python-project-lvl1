@@ -15,9 +15,9 @@ def start_game(game):
         answer = input("Your answer: ")
         if answer != correct_answer:
             print(
-            	"'{}' is wrong answer ;(. Correct answer was '{}'."
-            	"Let's try again, {}!".format(answer, correct_answer, name)
-            	)
+                "'{}' is wrong answer ;(. Correct answer was '{}'."
+                "Let's try again, {}!".format(answer, correct_answer, name)
+                )
             break
         print('Correct!')
     else:
