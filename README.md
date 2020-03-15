@@ -3,21 +3,24 @@
 <a href="https://codeclimate.com/github/xegrassa/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/31a929a130e8dff6a5c0/maintainability" /></a>
 [![Build Status](https://travis-ci.org/xegrassa/python-project-lvl1.svg?branch=master)](https://travis-ci.org/xegrassa/python-project-lvl1)
 
-Description
+## Description
+
 The set of mini-games that are launched from the console.
 
-Install
-npm install -g brain-games-greybutton
+### Install
 
-Play
+`npm install -g brain-games-greybutton`
+
+### Play
+
 Type in terminal one of these games
 
-brain-even
-brain-calc
-brain-gcd
-brain-balance
-brain-progression
-brain-prime
+- brain-even
+- brain-calc
+- brain-gcd
+- brain-balance
+- brain-progression
+- brain-prime
 
 Install and Play brain-even
 <a href="https://asciinema.org/a/284495" target="_blank"><img src="https://asciinema.org/a/284495.svg" /></a>
