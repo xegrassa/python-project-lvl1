@@ -22,18 +22,8 @@ Type in terminal one of these games
 - brain-progression
 - brain-prime
 
-Install and Play brain-even
+### Install and Play brain-even
 <a href="https://asciinema.org/a/284495" target="_blank"><img src="https://asciinema.org/a/284495.svg" /></a>
 
-Install and Play brain-calc
-<a href="https://asciinema.org/a/284494" target="_blank"><img src="https://asciinema.org/a/284494.svg" /></a>
-
-Install and Play brain-gcd
-<a href="https://asciinema.org/a/284496" target="_blank"><img src="https://asciinema.org/a/284496.svg" /></a>
-
-Install and Play brain-prime
-<a href="https://asciinema.org/a/284497" target="_blank"><img src="https://asciinema.org/a/284497.svg" /></a>
-
-Install and Play brain-progression
+### Install and Play brain-progression
 <a href="https://asciinema.org/a/284498" target="_blank"><img src="https://asciinema.org/a/284498.svg" /></a>
-
